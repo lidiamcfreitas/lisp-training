@@ -9,7 +9,7 @@
             (let ((moeda (percepcao-moeda p)))
                 (cond   ((not moeda) 'ESPERAR)
                         ((and moeda (zerop capacidade)) (setf capacidade 49)'TROCA-SACO-E-ENSACA)
-                        (t (decf capacidade) 'MOEDA))))))
+                        (t (decf capacidade) 'ENSACA))))))
 
 (setf p-moeda (make-percepcao :moeda T))
 (setf p-nada (make-percepcao))
