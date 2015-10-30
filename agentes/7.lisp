@@ -1,3 +1,8 @@
+; agente de reflexos simples seria possivel, mas nao teria controlo sobre
+: a energia que gastava, porque nao tinha forma de saber por onde ja teria
+; passado, e onde e que ja tinha limpo.
+
+
 ; agente de reflexos com modelo, pois sabe por quantas posicoes ja passou
 
 (defstruct percepcao
